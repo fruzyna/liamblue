@@ -1,6 +1,8 @@
 #!/bin/bash
 set -ouex pipefail
 
+rsync -rvK /ctx/system_files/ /
+
 mkdir -p /tmp/scripts/helpers
 install -Dm0755 /ctx/utils/ghcurl /tmp/scripts/helpers/ghcurl
 export PATH="/tmp/scripts/helpers:$PATH"
@@ -10,3 +12,9 @@ export PATH="/tmp/scripts/helpers:$PATH"
 /ctx/01-akmods.sh
 
 /ctx/02-packages.sh
+
+/ctx/03-systemd.sh
+
+/ctx/04-cleanup.sh
+
+/ctx/05-initramfs.sh

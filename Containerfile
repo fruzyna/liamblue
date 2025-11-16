@@ -1,5 +1,5 @@
 ARG BASE_IMAGE_NAME="silverblue"
-ARG FEDORA_MAJOR_VERSION="42"
+ARG FEDORA_MAJOR_VERSION="43"
 ARG SOURCE_IMAGE="${BASE_IMAGE_NAME}-main"
 
 # Allow build scripts to be referenced without being copied into the final image
@@ -9,6 +9,7 @@ COPY build_files /
 # Base Image
 FROM ghcr.io/ublue-os/${SOURCE_IMAGE}:${FEDORA_MAJOR_VERSION}
 
+# not sure why these need to be redefined
 ARG BASE_IMAGE_NAME="silverblue"
 ARG FEDORA_MAJOR_VERSION="43"
 
