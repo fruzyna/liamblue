@@ -1,28 +1,12 @@
 #!/bin/bash
 set -ouex pipefail
 
-# add other desired packages
-dnf5 install -y \
-    firefox \
-    gnome-shell-extension-drive-menu \
-    keepassxc \
-    pam-u2f \
-    pamu2fcfg
+mkdir -p /tmp/scripts/helpers
+install -Dm0755 /ctx/utils/ghcurl /tmp/scripts/helpers/ghcurl
+export PATH="/tmp/scripts/helpers:$PATH"
 
-# remove default gnome extensions
-dnf5 remove -y \
-    gnome-shell-extension-blur-my-shell \
-    gnome-shell-extension-caffeine \
-    gnome-shell-extension-dash-to-dock \
-    gnome-shell-extension-gsconnect \
-    gnome-shell-extension-logo-menu \
-    gnome-shell-extension-tailscale-gnome-qs
+/ctx/00-metadata.sh
 
-# remove unwanted packages
-dnf5 remove -y \
-    tailscale \
-    ublue-brew \
-    ublue-motd
+/ctx/01-akmods.sh
 
-cp /ctx/post-install.sh /
-chmod +x /post-install.sh
+/ctx/02-packages.sh
