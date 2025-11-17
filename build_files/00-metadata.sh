@@ -6,8 +6,8 @@ IMAGE_PRETTY_NAME="Bluefin" # IDK why but changing this breaks ISO builds
 IMAGE_LIKE="fedora"
 HOME_URL="https://fruzyna.net"
 DOCUMENTATION_URL="https://docs.projectbluefin.io"
-SUPPORT_URL="https://github.com/fruzyna/liamfin/issues/"
-BUG_SUPPORT_URL="https://github.com/fruzyna/liamfin/issues/"
+SUPPORT_URL="https://github.com/fruzyna/liamblue/issues/"
+BUG_SUPPORT_URL="https://github.com/fruzyna/liamblue/issues/"
 CODE_NAME="Bluefin--"
 VERSION="${VERSION:-00.00000000}"
 

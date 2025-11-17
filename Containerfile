@@ -14,7 +14,7 @@ ARG BASE_IMAGE_NAME="silverblue"
 ARG FEDORA_MAJOR_VERSION="43"
 
 ARG AKMODS_FLAVOR="main"
-ARG IMAGE_NAME="liamfin-nvidia-open"
+ARG IMAGE_NAME="liamblue"
 ARG IMAGE_VENDOR="fruzyna"
 ARG UBLUE_IMAGE_TAG="latest"
 ARG SHA_HEAD_SHORT="dedbeef"
