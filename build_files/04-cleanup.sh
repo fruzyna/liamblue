@@ -52,3 +52,5 @@ if [ -f /etc/yum.repos.d/fedora-coreos-pool.repo ]; then
 fi
 
 dnf clean all
+
+rm -rf /.gitkeep

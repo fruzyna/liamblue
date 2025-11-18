@@ -18,3 +18,5 @@ export PATH="/tmp/scripts/helpers:$PATH"
 /ctx/04-cleanup.sh
 
 /ctx/05-initramfs.sh
+
+/ctx/06-tests.sh
