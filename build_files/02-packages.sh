@@ -52,6 +52,7 @@ copr_install_isolated() {
 
 # From ublue-os/packages
 copr_install_isolated "ublue-os/packages" \
+    "ublue-setup-services" \
     "uupd"
 
 # Packages to exclude - common to all versions
