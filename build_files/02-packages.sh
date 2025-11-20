@@ -14,15 +14,24 @@ set -ouex pipefail
 FEDORA_PACKAGES=(
     # TODO: dependencies for running Justfile
     android-tools
+    bootc
+    ddcutil
     evolution-ews-core
     fish
+    git-credential-libsecret
     gnome-shell-extension-appindicator
     gnome-shell-extension-drive-menu
     gnome-shell-extension-launch-new-instance
+    gnome-tweaks
+    iwd
     keepassxc
+    lm_sensors
     podman-compose
+    pulseaudio-utils
     python3-pip
+    waypipe
     wireguard-tools
+    wl-clipboard
 )
 
 # Install all Fedora packages (bulk - safe from COPR injection)
@@ -52,6 +61,7 @@ copr_install_isolated() {
 
 # From ublue-os/packages
 copr_install_isolated "ublue-os/packages" \
+    "ublue-polkit-rules" \
     "ublue-setup-services" \
     "uupd"
 
