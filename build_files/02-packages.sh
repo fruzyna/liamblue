@@ -29,6 +29,7 @@ FEDORA_PACKAGES=(
     podman-compose
     pulseaudio-utils
     python3-pip
+    steam-devices
     waypipe
     wireguard-tools
     wl-clipboard
