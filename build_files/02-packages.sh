@@ -19,6 +19,7 @@ FEDORA_PACKAGES=(
     evolution-ews-core
     fish
     git-credential-libsecret
+    git-lfs
     gnome-shell-extension-appindicator
     gnome-shell-extension-drive-menu
     gnome-shell-extension-launch-new-instance
